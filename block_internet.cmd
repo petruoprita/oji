@@ -35,6 +35,7 @@ if "%1"=="block" (
 		netsh advfirewall firewall add rule name="AllowIP23" dir=out action=allow remoteip=35.158.203.79
 		netsh advfirewall firewall add rule name="AllowIP24" dir=out action=allow remoteip=3.64.189.93
 		netsh advfirewall firewall add rule name="AllowIP25" dir=out action=allow remoteip=80.86.106.229
+		netsh advfirewall firewall add rule name="AllowIP26" dir=out action=allow remoteip=80.86.119.33
 		netsh advfirewall firewall add rule name="AllowIPCF1" dir=out action=allow remoteip=173.245.48.0/20
 		netsh advfirewall firewall add rule name="AllowIPCF2" dir=out action=allow remoteip=103.21.244.0/22
 		netsh advfirewall firewall add rule name="AllowIPCF3" dir=out action=allow remoteip=103.22.200.0/22
@@ -86,6 +87,7 @@ if "%1"=="block" (
 			netsh advfirewall firewall del rule name="AllowIP23"
 			netsh advfirewall firewall del rule name="AllowIP24"
 			netsh advfirewall firewall del rule name="AllowIP25"
+			netsh advfirewall firewall del rule name="AllowIP26"
 			netsh advfirewall firewall del rule name="AllowIPCF1"
 			netsh advfirewall firewall del rule name="AllowIPCF2"
 			netsh advfirewall firewall del rule name="AllowIPCF3"
