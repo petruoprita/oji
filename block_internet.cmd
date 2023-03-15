@@ -36,21 +36,7 @@ if "%1"=="block" (
 		netsh advfirewall firewall add rule name="AllowIP24" dir=out action=allow remoteip=3.64.189.93
 		netsh advfirewall firewall add rule name="AllowIP25" dir=out action=allow remoteip=80.86.106.229
 		netsh advfirewall firewall add rule name="AllowIP26" dir=out action=allow remoteip=80.86.119.33
-		netsh advfirewall firewall add rule name="AllowIPCF1" dir=out action=allow remoteip=173.245.48.0/20
-		netsh advfirewall firewall add rule name="AllowIPCF2" dir=out action=allow remoteip=103.21.244.0/22
-		netsh advfirewall firewall add rule name="AllowIPCF3" dir=out action=allow remoteip=103.22.200.0/22
-		netsh advfirewall firewall add rule name="AllowIPCF4" dir=out action=allow remoteip=103.31.4.0/22
-		netsh advfirewall firewall add rule name="AllowIPCF5" dir=out action=allow remoteip=141.101.64.0/18
-		netsh advfirewall firewall add rule name="AllowIPCF6" dir=out action=allow remoteip=108.162.192.0/18
-		netsh advfirewall firewall add rule name="AllowIPCF7" dir=out action=allow remoteip=190.93.240.0/20
-		netsh advfirewall firewall add rule name="AllowIPCF8" dir=out action=allow remoteip=188.114.96.0/20
-		netsh advfirewall firewall add rule name="AllowIPCF9" dir=out action=allow remoteip=197.234.240.0/22
-		netsh advfirewall firewall add rule name="AllowIPCF10" dir=out action=allow remoteip=198.41.128.0/17
-		netsh advfirewall firewall add rule name="AllowIPCF11" dir=out action=allow remoteip=162.158.0.0/15
-		netsh advfirewall firewall add rule name="AllowIPCF12" dir=out action=allow remoteip=104.16.0.0/13
-		netsh advfirewall firewall add rule name="AllowIPCF13" dir=out action=allow remoteip=104.24.0.0/14
-		netsh advfirewall firewall add rule name="AllowIPCF14" dir=out action=allow remoteip=172.64.0.0/13
-		netsh advfirewall firewall add rule name="AllowIPCF15" dir=out action=allow remoteip=131.0.72.0/22
+		netsh advfirewall firewall add rule name="AllowIP27" dir=out action=allow remoteip=34.159.143.85
 	)
 ) else (
 	if "%1"=="unblock" (
@@ -88,21 +74,7 @@ if "%1"=="block" (
 			netsh advfirewall firewall del rule name="AllowIP24"
 			netsh advfirewall firewall del rule name="AllowIP25"
 			netsh advfirewall firewall del rule name="AllowIP26"
-			netsh advfirewall firewall del rule name="AllowIPCF1"
-			netsh advfirewall firewall del rule name="AllowIPCF2"
-			netsh advfirewall firewall del rule name="AllowIPCF3"
-			netsh advfirewall firewall del rule name="AllowIPCF4"
-			netsh advfirewall firewall del rule name="AllowIPCF5"
-			netsh advfirewall firewall del rule name="AllowIPCF6"
-			netsh advfirewall firewall del rule name="AllowIPCF7"
-			netsh advfirewall firewall del rule name="AllowIPCF8"
-			netsh advfirewall firewall del rule name="AllowIPCF9"
-			netsh advfirewall firewall del rule name="AllowIPCF10"
-			netsh advfirewall firewall del rule name="AllowIPCF11"
-			netsh advfirewall firewall del rule name="AllowIPCF12"
-			netsh advfirewall firewall del rule name="AllowIPCF13"
-			netsh advfirewall firewall del rule name="AllowIPCF14"
-			netsh advfirewall firewall del rule name="AllowIPCF15"
+			netsh advfirewall firewall del rule name="AllowIP27"
 			netsh advfirewall firewall set rule all new enable=yes
 		)
 	) else (
