@@ -10,6 +10,7 @@ if "%1"=="block" (
 		netsh advfirewall firewall set rule group="Core Networking" new enable=yes
 		netsh advfirewall set allprofiles firewallpolicy blockinbound,blockoutbound
 		netsh advfirewall firewall add rule name="AllowDNS" program="%SystemRoot%\system32\svchost.exe" dir=out action=allow protocol=UDP remoteport=53
+		netsh firewall add portopening ALL 53 DNS-server
 		netsh advfirewall firewall add rule name="AllowIP1" dir=out action=allow remoteip=34.159.0.251
 		netsh advfirewall firewall add rule name="AllowIP2" dir=out action=allow remoteip=35.198.164.70
 		netsh advfirewall firewall add rule name="AllowIP3" dir=out action=allow remoteip=35.230.143.147
